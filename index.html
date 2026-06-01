@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>刘氏推拿 · 大隐隐于市</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Noto+Serif+SC:wght@300;400;500;600;700&family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Noise texture -->
+    <div class="noise" aria-hidden="true"></div>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <a href="#" class="nav__logo">刘氏推拿</a>
+        <ul class="nav__links">
+            <li><a href="#services">诊疗</a></li>
+            <li><a href="#story">故事</a></li>
+            <li><a href="#space">空间</a></li>
+            <li><a href="#words">口碑</a></li>
+            <li><a href="#book">预约</a></li>
+        </ul>
+        <a href="tel:13888888888" class="nav__phone">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+            138-8888-8888
+        </a>
+        <button class="nav__toggle" id="navToggle" aria-label="菜单">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <!-- Hero: Asymmetric layout, not centered -->
+    <section class="hero">
+        <div class="hero__bg" aria-hidden="true">
+            <div class="hero__ink"></div>
+        </div>
+        <div class="hero__content">
+            <div class="hero__text">
+                <p class="hero__tag">始于1998 · 专注推拿二十六年</p>
+                <h1 class="hero__title">刘氏推拿</h1>
+                <p class="hero__sub">大隐隐于市</p>
+                <div class="hero__line" aria-hidden="true"></div>
+                <p class="hero__desc">
+                    没有豪华装修，没有花哨宣传。<br>
+                    只有一双手，一身本事，<br>
+                    和二十六年不变的初心。
+                </p>
+                <div class="hero__cta">
+                    <a href="#book" class="btn btn--primary">立即预约</a>
+                    <a href="#story" class="btn btn--ghost">了解更多</a>
+                </div>
+            </div>
+            <div class="hero__visual">
+                <div class="hero__portrait">
+                    <img src="https://picsum.photos/seed/master-liu/600/800" alt="刘师傅" loading="eager">
+                    <div class="hero__portrait-border" aria-hidden="true"></div>
+                </div>
+                <div class="hero__stat hero__stat--1">
+                    <span class="hero__stat-num">26</span>
+                    <span class="hero__stat-label">年经验</span>
+                </div>
+                <div class="hero__stat hero__stat--2">
+                    <span class="hero__stat-num">3万+</span>
+                    <span class="hero__stat-label">服务人次</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services: Bento grid -->
+    <section class="services" id="services">
+        <div class="container">
+            <header class="section-head">
+                <span class="section-head__tag">诊疗项目</span>
+                <h2 class="section-head__title">我们能帮你什么</h2>
+            </header>
+            <div class="bento">
+                <article class="bento__item bento__item--wide reveal">
+                    <div class="bento__icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M18 11V6a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v0M14 10V4a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v2M10 10.5V6a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v8"/>
+                            <path d="M18 8a2 2 0 1 1 4 0v6a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.86-5.99-2.34l-3.6-3.6a2 2 0 0 1 2.83-2.82L7 13"/>
+                        </svg>
+                    </div>
+                    <h3>中医推拿</h3>
+                    <p>颈椎、腰椎、肩周问题，手法到位，一次就能感受到变化。不玩虚的，靠手艺说话。</p>
+                    <span class="bento__price">¥ 200 起</span>
+                </article>
+                <article class="bento__item reveal">
+                    <div class="bento__icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="12" cy="12" r="10"/><path d="m12 8 4 4-4 4"/><path d="M8 12h8"/>
+                        </svg>
+                    </div>
+                    <h3>针灸理疗</h3>
+                    <p>失眠、头痛、腰腿疼，老祖宗的法子，管用。</p>
+                    <span class="bento__price">¥ 150 起</span>
+                </article>
+                <article class="bento__item reveal">
+                    <div class="bento__icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 2v6m0 0a4 4 0 1 0 4 4M12 8a4 4 0 1 1-4 4m4-8v2m-4 6v6"/>
+                        </svg>
+                    </div>
+                    <h3>艾灸温补</h3>
+                    <p>宫寒、脾胃虚、怕冷，做完浑身舒坦。</p>
+                    <span class="bento__price">¥ 120 起</span>
+                </article>
+                <article class="bento__item reveal">
+                    <div class="bento__icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/>
+                            <path d="m7 10 3 3 7-7"/>
+                        </svg>
+                    </div>
+                    <h3>拔罐刮痧</h3>
+                    <p>感冒初期、肌肉酸痛、湿气重，轻松大半。</p>
+                    <span class="bento__price">¥ 80 起</span>
+                </article>
+                <article class="bento__item reveal">
+                    <div class="bento__icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/>
+                        </svg>
+                    </div>
+                    <h3>正骨复位</h3>
+                    <p>关节错位、长短腿、含胸驼背，立竿见影。</p>
+                    <span class="bento__price">¥ 200 起</span>
+                </article>
+                <article class="bento__item bento__item--accent reveal">
+                    <div class="bento__icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        </svg>
+                    </div>
+                    <h3>中药外敷</h3>
+                    <p>跌打损伤、风湿关节痛，祖传配方，安全有效。</p>
+                    <span class="bento__price">面诊定价</span>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Story: Editorial asymmetric -->
+    <section class="story" id="story">
+        <div class="container">
+            <div class="story__grid">
+                <div class="story__image reveal">
+                    <img src="https://picsum.photos/seed/tuina-hands/700/900" alt="刘师傅的手" loading="lazy">
+                    <div class="story__image-accent" aria-hidden="true"></div>
+                </div>
+                <div class="story__content">
+                    <span class="section-head__tag">关于刘师傅</span>
+                    <h2 class="story__title">手艺人，<br>不整虚的</h2>
+                    <div class="story__text">
+                        <p>刘师傅，名不见经传，没有专家头衔，没有媒体采访。但在这一片，谁家有个腰酸背痛，第一个想到的就是他。</p>
+                        <p>16岁跟师学艺，从最基础的揉按开始，一双手练了整整十年。后来又去进修了针灸、正骨，把中医推拿的十八般武艺都学了个遍。</p>
+                        <p>开这个小店，不为赚大钱，就图个街坊方便。手法到位，价格实在，治好一个是一个。</p>
+                    </div>
+                    <div class="story__features">
+                        <div class="feature">
+                            <div class="feature__check">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                            </div>
+                            <div>
+                                <strong>手法到位</strong>
+                                <span>26年功力，手到病除</span>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature__check">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                            </div>
+                            <div>
+                                <strong>价格实在</strong>
+                                <span>不搞套路，明码标价</span>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature__check">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                            </div>
+                            <div>
+                                <strong>口碑相传</strong>
+                                <span>全靠老客户介绍</span>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature__check">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                            </div>
+                            <div>
+                                <strong>效果说话</strong>
+                                <span>做一次就知道好坏</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Space: Masonry gallery -->
+    <section class="space" id="space">
+        <div class="container">
+            <header class="section-head">
+                <span class="section-head__tag">店内环境</span>
+                <h2 class="section-head__title">简单干净，舒服就行</h2>
+            </header>
+            <div class="masonry">
+                <div class="masonry__item masonry__item--tall reveal">
+                    <img src="https://picsum.photos/seed/massage-bed/500/700" alt="推拿室" loading="lazy">
+                    <div class="masonry__label">推拿室</div>
+                </div>
+                <div class="masonry__item reveal">
+                    <img src="https://picsum.photos/seed/needle-set/500/400" alt="针灸区" loading="lazy">
+                    <div class="masonry__label">针灸区</div>
+                </div>
+                <div class="masonry__item reveal">
+                    <img src="https://picsum.photos/seed/herbs-jar/500/400" alt="药柜" loading="lazy">
+                    <div class="masonry__label">药柜</div>
+                </div>
+                <div class="masonry__item masonry__item--wide reveal">
+                    <img src="https://picsum.photos/seed/waiting-tea/800/400" alt="候诊区" loading="lazy">
+                    <div class="masonry__label">候诊区 · 茶歇</div>
+                </div>
+                <div class="masonry__item reveal">
+                    <img src="https://picsum.photos/seed/moxa-stick/500/400" alt="艾灸区" loading="lazy">
+                    <div class="masonry__label">艾灸区</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Words: Testimonials -->
+    <section class="words" id="words">
+        <div class="container">
+            <header class="section-head section-head--light">
+                <span class="section-head__tag">街坊口碑</span>
+                <h2 class="section-head__title">大家说好才是真的好</h2>
+            </header>
+            <div class="words__slider">
+                <div class="words__item words__item--active" data-index="0">
+                    <div class="words__quote" aria-hidden="true">"</div>
+                    <blockquote>脖子疼了大半年，去了好几家医院没好转。朋友介绍来找刘师傅，三次就舒服多了。现在每月来保养一次，省了好多事。</blockquote>
+                    <cite>王大姐 · 小区邻居</cite>
+                </div>
+                <div class="words__item" data-index="1">
+                    <div class="words__quote" aria-hidden="true">"</div>
+                    <blockquote>程序员坐久了腰不行，刘师傅正骨手法真的绝，咔咔几下就复位了。关键是价格也实在，比大医院便宜多了。</blockquote>
+                    <cite>小张 · 程序员</cite>
+                </div>
+                <div class="words__item" data-index="2">
+                    <div class="words__quote" aria-hidden="true">"</div>
+                    <blockquote>产后腰疼得厉害，刘师傅推拿加艾灸，做了几次就好了。还教我一些自己保养的方法，特别贴心。</blockquote>
+                    <cite>李妈妈 · 新手妈妈</cite>
+                </div>
+                <div class="words__item" data-index="3">
+                    <div class="words__quote" aria-hidden="true">"</div>
+                    <blockquote>老寒腿好多年了，一到冬天就犯。刘师傅给拔罐刮痧，配上中药外敷，今年冬天居然没怎么犯。</blockquote>
+                    <cite>赵叔 · 退休工人</cite>
+                </div>
+                <div class="words__dots">
+                    <button class="words__dot words__dot--active" data-index="0" aria-label="评价1"></button>
+                    <button class="words__dot" data-index="1" aria-label="评价2"></button>
+                    <button class="words__dot" data-index="2" aria-label="评价3"></button>
+                    <button class="words__dot" data-index="3" aria-label="评价4"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking -->
+    <section class="book" id="book">
+        <div class="container">
+            <div class="book__grid">
+                <div class="book__info reveal">
+                    <span class="section-head__tag">预约咨询</span>
+                    <h2 class="book__title">来找我们</h2>
+                    <div class="book__details">
+                        <div class="book__detail">
+                            <div class="book__detail-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            </div>
+                            <div>
+                                <strong>地址</strong>
+                                <p>XX市XX区幸福路88号<br>刘氏推拿（菜市场旁）</p>
+                            </div>
+                        </div>
+                        <div class="book__detail">
+                            <div class="book__detail-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                            </div>
+                            <div>
+                                <strong>电话</strong>
+                                <p>138-8888-8888<br>微信同号</p>
+                            </div>
+                        </div>
+                        <div class="book__detail">
+                            <div class="book__detail-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                            </div>
+                            <div>
+                                <strong>营业时间</strong>
+                                <p>每天 8:30 - 21:00<br>全年无休</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form class="book__form reveal" id="bookingForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">您的称呼</label>
+                            <input type="text" id="name" placeholder="怎么称呼您" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">联系电话</label>
+                            <input type="tel" id="phone" placeholder="方便联系的电话" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="service">想做什么</label>
+                        <select id="service" required>
+                            <option value="" disabled selected>选一个项目</option>
+                            <option>中医推拿</option>
+                            <option>针灸理疗</option>
+                            <option>艾灸调理</option>
+                            <option>拔罐刮痧</option>
+                            <option>正骨复位</option>
+                            <option>中药外敷</option>
+                            <option>先咨询看看</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="desc">简单说说情况</label>
+                        <textarea id="desc" placeholder="哪里不舒服？大概多久了？"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn--primary btn--full">提交预约</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__brand">
+                    <span class="footer__logo">刘氏推拿</span>
+                    <p class="footer__tagline">大隐隐于市 · 手到病自除</p>
+                </div>
+                <nav class="footer__nav">
+                    <a href="#services">诊疗项目</a>
+                    <a href="#story">关于刘师傅</a>
+                    <a href="#book">预约咨询</a>
+                </nav>
+            </div>
+            <div class="footer__copy">
+                <p>© 2024 刘氏推拿 · 始于1998</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
